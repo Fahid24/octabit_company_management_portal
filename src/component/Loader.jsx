@@ -43,7 +43,7 @@ export default function Loader() {
             <img
               src={siteIcon2}
               alt="Main Logo"
-              className="w-10 h-auto animate-[spin_2s_linear_infinite]"
+              className="w-10 h-auto animate-[pulse_2s_linear_infinite]"
             />
 
             {/* Smaller pulsing glow */}

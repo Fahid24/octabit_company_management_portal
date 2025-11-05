@@ -46,7 +46,7 @@ export function EmailPreview({ emailContent }) {
         <div className="space-y-2">
           <div className="grid grid-cols-3 gap-2 text-sm">
             <div className="font-medium">From:</div>
-            <div className="col-span-2">admin@haquedigital.com</div>
+            <div className="col-span-2">admin.portal@yopmail.com</div>
 
             <div className="font-medium">To:</div>
             <div className="col-span-2">

@@ -230,10 +230,10 @@ export function EmailEditor({ emailContent, setEmailContent }) {
               style={{ backgroundColor: 'white' }}
             >
               <option value="">Text Color</option>
-              <option value="#000000" style={{ color: '#000000' }}>
+              <option value="#28282B" style={{ color: '#28282B' }}>
                 Black
               </option>
-              <option value="#ffffff" style={{ color: '#000000' }}>
+              <option value="#ffffff" style={{ color: '#28282B' }}>
                 White
               </option>
               <option value="#3a41e2" style={{ color: '#3a41e2' }}>

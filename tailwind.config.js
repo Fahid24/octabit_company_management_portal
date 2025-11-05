@@ -11,7 +11,7 @@ export default {
         secondary: "#000",
         error: "#F44336",
         warning: "#FFC107",
-        primary: "#3941e3",
+        primary: "#28282B",
       },
       backgroundImage: {
         "soft-primary-gradient":

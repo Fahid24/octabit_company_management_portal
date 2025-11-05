@@ -119,7 +119,7 @@ const InventoryDashboardPage = () => {
             <div className="flex items-center space-x-3">
               <div
                 className="p-2 rounded-lg"
-                style={{ backgroundColor: "#3941e3" }}
+                style={{ backgroundColor: "#28282B" }}
               >
                 <Package className="h-6 w-6 text-white" />
               </div>
@@ -625,7 +625,7 @@ const InventoryDashboardPage = () => {
                     : "text-gray-600 hover:text-gray-900"
                 }`}
                 style={
-                  activeTab === "vendors" ? { backgroundColor: "#3941e3" } : {}
+                  activeTab === "vendors" ? { backgroundColor: "#28282B" } : {}
                 }
               >
                 Vendors
@@ -639,7 +639,7 @@ const InventoryDashboardPage = () => {
                 }`}
                 style={
                   activeTab === "categories"
-                    ? { backgroundColor: "#3941e3" }
+                    ? { backgroundColor: "#28282B" }
                     : {}
                 }
               >
@@ -653,7 +653,7 @@ const InventoryDashboardPage = () => {
                     : "text-gray-600 hover:text-gray-900"
                 }`}
                 style={
-                  activeTab === "types" ? { backgroundColor: "#3941e3" } : {}
+                  activeTab === "types" ? { backgroundColor: "#28282B" } : {}
                 }
               >
                 Types

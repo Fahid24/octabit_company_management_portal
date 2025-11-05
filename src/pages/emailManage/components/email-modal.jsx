@@ -22,7 +22,7 @@ export function EmailModal() {
     subject: "",
     messageBody:
       "<p>Hi $firstName,</p><p>I hope this email finds you well. I wanted to reach out regarding your recent inquiry about our services.</p><p>Looking forward to hearing from you soon.</p>",
-    footer: `<tr><td style="padding: 0px;"><p style="margin: 0 0 10px 0; " >As always, if you have any questions or need assistance, you may contact us at <a href="mailto:admin@haquedigital.com" style="color: #3a41e2; font-weight: 700; text-decoration: none;">admin@haquedigital.com</a>.</p><p style="margin: 0;">Thank you for choosing OptimalMD,</p><p style="margin: 0;">Shawn Fry</p><p style="margin: 0">Founder & CEO</p><p style="margin: 0;">OptimalMD Technologies</p></td></tr><td style="padding: 0px;">
+    footer: `<tr><td style="padding: 0px;"><p style="margin: 0 0 10px 0; " >As always, if you have any questions or need assistance, you may contact us at <a href="mailto:admin.portal@yopmail.com" style="color: #3a41e2; font-weight: 700; text-decoration: none;">admin.portal@yopmail.com</a>.</p><p style="margin: 0;">Thank you for choosing OptimalMD,</p><p style="margin: 0;">Shawn Fry</p><p style="margin: 0">Founder & CEO</p><p style="margin: 0;">OptimalMD Technologies</p></td></tr><td style="padding: 0px;">
 		<p style="margin: 20px 0px 0px; text-align: justify;"><font size="2" style="" color="#808080">This message, and any attachments, is for the exclusive use of the intended recipient and
 			may contain privileged, proprietary or confidential information intended solely for use by OptimalMD
 			Technologies, LLC. and the intended recipient. If you are not the intended recipient, please notify me via
@@ -106,7 +106,7 @@ export function EmailModal() {
         subject: "",
         messageBody:
           "<p>Hi $firstName,</p><p>I hope this email finds you well. I wanted to reach out regarding your recent inquiry about our services.</p><p>Looking forward to hearing from you soon.</p>",
-        footer: `<tr><td style="padding: 0px;"><p style="margin: 0 0 10px 0; " >As always, if you have any questions or need assistance, you may contact us at <a href="mailto:admin@haquedigital.com" style="color: #3a41e2; font-weight: 700; text-decoration: none;">admin@haquedigital.com</a>.</p><p style="margin: 0;">Thank you for choosing OptimalMD,</p><p style="margin: 0;">Shawn Fry</p><p style="margin: 0">Founder & CEO</p><p style="margin: 0;">OptimalMD Technologies</p></td></tr><td style="padding: 0px;">
+        footer: `<tr><td style="padding: 0px;"><p style="margin: 0 0 10px 0; " >As always, if you have any questions or need assistance, you may contact us at <a href="mailto:admin.portal@yopmail.com" style="color: #3a41e2; font-weight: 700; text-decoration: none;">admin.portal@yopmail.com</a>.</p><p style="margin: 0;">Thank you for choosing OptimalMD,</p><p style="margin: 0;">Shawn Fry</p><p style="margin: 0">Founder & CEO</p><p style="margin: 0;">OptimalMD Technologies</p></td></tr><td style="padding: 0px;">
 		<p style="margin: 20px 0px 0px; text-align: justify;"><font size="2" style="" color="#808080">This message, and any attachments, is for the exclusive use of the intended recipient and
 			may contain privileged, proprietary or confidential information intended solely for use by OptimalMD
 			Technologies, LLC. and the intended recipient. If you are not the intended recipient, please notify me via
@@ -200,7 +200,7 @@ export function EmailModal() {
                     subject: "",
                     messageBody:
                       "<p>Hi $firstName,</p><p>I hope this email finds you well. I wanted to reach out regarding your recent inquiry about our services.</p><p>Looking forward to hearing from you soon.</p>",
-                    footer: `<tr><td style="padding: 0px;"><p style="margin: 0 0 10px 0; " >As always, if you have any questions or need assistance, you may contact us at <a href="mailto:admin@haquedigital.com" style="color: #3a41e2; font-weight: 700; text-decoration: none;">admin@haquedigital.com</a>.</p><p style="margin: 0;">Thank you for choosing OptimalMD,</p><p style="margin: 0;">Shawn Fry</p><p style="margin: 0">Founder & CEO</p><p style="margin: 0;">OptimalMD Technologies</p></td></tr><td style="padding: 0px;">
+                    footer: `<tr><td style="padding: 0px;"><p style="margin: 0 0 10px 0; " >As always, if you have any questions or need assistance, you may contact us at <a href="mailto:admin.portal@yopmail.com" style="color: #3a41e2; font-weight: 700; text-decoration: none;">admin.portal@yopmail.com</a>.</p><p style="margin: 0;">Thank you for choosing OptimalMD,</p><p style="margin: 0;">Shawn Fry</p><p style="margin: 0">Founder & CEO</p><p style="margin: 0;">OptimalMD Technologies</p></td></tr><td style="padding: 0px;">
 		<p style="margin: 20px 0px 0px; text-align: justify;"><font size="2" style="" color="#808080">This message, and any attachments, is for the exclusive use of the intended recipient and
 			may contain privileged, proprietary or confidential information intended solely for use by OptimalMD
 			Technologies, LLC. and the intended recipient. If you are not the intended recipient, please notify me via
@@ -261,7 +261,7 @@ export function EmailModal() {
                     subject: "",
                     messageBody:
                       "<p>Hi $firstName,</p><p>I hope this email finds you well. I wanted to reach out regarding your recent inquiry about our services.</p><p>Looking forward to hearing from you soon.</p>",
-                    footer: `<tr><td style="padding: 0px;"><p style="margin: 0 0 10px 0; " >As always, if you have any questions or need assistance, you may contact us at <a href="mailto:admin@haquedigital.com" style="color: #3a41e2; font-weight: 700; text-decoration: none;">admin@haquedigital.com</a>.</p><p style="margin: 0;">Thank you for choosing OptimalMD,</p><p style="margin: 0;">Shawn Fry</p><p style="margin: 0">Founder & CEO</p><p style="margin: 0;">OptimalMD Technologies</p></td></tr><td style="padding: 0px;">
+                    footer: `<tr><td style="padding: 0px;"><p style="margin: 0 0 10px 0; " >As always, if you have any questions or need assistance, you may contact us at <a href="mailto:admin.portal@yopmail.com" style="color: #3a41e2; font-weight: 700; text-decoration: none;">admin.portal@yopmail.com</a>.</p><p style="margin: 0;">Thank you for choosing OptimalMD,</p><p style="margin: 0;">Shawn Fry</p><p style="margin: 0">Founder & CEO</p><p style="margin: 0;">OptimalMD Technologies</p></td></tr><td style="padding: 0px;">
 		<p style="margin: 20px 0px 0px; text-align: justify;"><font size="2" style="" color="#808080">This message, and any attachments, is for the exclusive use of the intended recipient and
 			may contain privileged, proprietary or confidential information intended solely for use by OptimalMD
 			Technologies, LLC. and the intended recipient. If you are not the intended recipient, please notify me via

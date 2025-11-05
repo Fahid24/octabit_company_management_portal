@@ -70,11 +70,11 @@ export default function LoginPage() {
         {/* Left side - Nature-themed panel (hidden on <lg) */}
         <div className="w-full hidden lg:block md:w-5/12 bg-black relative overflow-hidden">
           {/* Background image with natural overlay */}
-          <div className="absolute inset-0">
+          <div className="absolute inset-0 top-[20%]">
             <img
               src={logo2}
               alt="Tree Background"
-              className="w-full h-full object-cover object-center opacity-50"
+              className="w-full object-center opacity-50"
             />
 
             {/* Natural texture overlay */}
@@ -90,7 +90,7 @@ export default function LoginPage() {
                   <LazyImage
                     // src={odlGif}
                     src={logo}
-                    imgClass="w-10 h-auto animate-[spin_2s_linear_infinite]"
+                    imgClass="w-10 h-auto animate-pulse"
                     alt="Monkey Mans Logo"
                   />
                 </div>
@@ -138,7 +138,7 @@ export default function LoginPage() {
 
             {/* Bottom section */}
             <div className="mt-auto text-center text-white/60 text-xs">
-              Committed to excellence since 2017
+              Committed to excellence since 2025
             </div>
           </div>
 

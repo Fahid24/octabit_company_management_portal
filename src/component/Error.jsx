@@ -55,7 +55,7 @@ export default function Error() {
             onClick={handleGoHome}
             className="py-2 px-3 text-sm rounded-lg font-medium hover:opacity-90 transition-opacity"
             style={{
-              backgroundColor: "#3941e3",
+              backgroundColor: "#28282B",
               color: "white",
             }}
           >

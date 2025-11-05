@@ -513,7 +513,7 @@ export default function NotificationPanel({ open, onClose, userId }) {
           <div className="p-4">Messages content goes here.</div>
         </TabsContent>
         <TabsContent value="office">
-          <div className="p-4">Haque Digital Mail content goes here.</div>
+          <div className="p-4">Troublynx Mail content goes here.</div>
         </TabsContent>
       </Tabs>
     </div>

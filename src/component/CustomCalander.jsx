@@ -12,7 +12,7 @@ import PropTypes from "prop-types";
 const DatePicker = ({
   value = null,
   onChange,
-  primaryColor = "#3941e3",
+  primaryColor = "#28282B",
   startWeekOnMonday = false,
   className = "",
   minDate,

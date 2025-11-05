@@ -198,7 +198,7 @@ const FormattingToolbar = ({ onFormat, editorRef, buttonBackgroundColor, setButt
         className="h-8 w-8 p-0 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-green-500"
         title="Text Color"
         style={{ backgroundColor: "white" }}
-        defaultValue="#000000"
+        defaultValue="#28282B"
       />
     </div>
 

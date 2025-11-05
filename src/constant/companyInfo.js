@@ -1,3 +1,3 @@
-export const companyName = "Haque Digital LLC"
-export const companyEmail = "admin@haquedigital.com";
+export const companyName = "Troublynx Ltd.";
+export const companyEmail = "admin.portal@yopmail.com";
 export const companyAddress = "123 Main St, City, Country"

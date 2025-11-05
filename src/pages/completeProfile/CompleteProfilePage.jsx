@@ -122,7 +122,7 @@ const CompleteProfilePage = () => {
         <div className="text-center">
           <p className="text-sm text-gray-500">
             Need help?{" "}
-            <a href="mailto:admin@haquedigital.com" className="font-medium hover:underline" style={{ color: "#8A6642" }}>
+            <a href="mailto:admin.portal@yopmail.com" className="font-medium hover:underline" style={{ color: "#8A6642" }}>
               Contact Support
             </a>
           </p>

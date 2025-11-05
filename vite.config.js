@@ -20,8 +20,8 @@ export default defineConfig({
         "robots.txt"
       ],
       manifest: {
-        name: "Haque Digital",
-        short_name: "Haque Digital",
+        name: "Troublynx",
+        short_name: "Troublynx",
         start_url: "/",
         display: "standalone",
         background_color: "#ffffff", // ✅ Splash screen bg

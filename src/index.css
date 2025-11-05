@@ -249,14 +249,14 @@ body {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, transparent, #3941e3, transparent);
+  background: linear-gradient(90deg, transparent, #28282B, transparent);
   animation: scan 2s linear infinite;
 }
 
 .scan-text {
   font-size: 0.875rem;
   font-weight: 500;
-  color: #3941e3;
+  color: #28282B;
   animation: pulse 1.5s ease-in-out infinite;
 }
 
@@ -346,17 +346,17 @@ body {
   background: white;
 }
 ::-webkit-scrollbar-thumb {
-  background: #3941e3;
+  background: #28282B;
   border-radius: 0px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #3941e3;
+  background: #28282B;
 }
 
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #3941e3 #ffffff;
+  scrollbar-color: #28282B #ffffff;
 }
 
 /* Line clamp utilities */

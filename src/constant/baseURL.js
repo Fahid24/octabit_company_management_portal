@@ -1,5 +1,5 @@
-export const production = true;
-export const development = false;
+export const production = false;
+export const development = true;
 export const staging = false;
 export const baseURL = production
   ? "https://server.haquedigital.com/"

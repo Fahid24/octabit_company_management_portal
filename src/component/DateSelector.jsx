@@ -6,7 +6,7 @@ const DateSelector = ({
   label,
   selected,
   onChange,
-  primaryColor = "#3941e3", // Tailwind primary
+  primaryColor = "#28282B", // Tailwind primary
   dateFormat = "MM/dd/yy",
   placeholder = "MM/DD/YY",
 }) => {

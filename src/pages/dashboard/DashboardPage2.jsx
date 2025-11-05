@@ -606,7 +606,7 @@ const DashboardPage2 = () => {
                             dashboardStats?.summaryStats.inProgressProjects
                           }
                           total={dashboardStats?.summaryStats.totalProjects}
-                          color="#3941e3"
+                          color="#28282B"
                         />
                         <ProgressBar
                           label="Not Started"
@@ -714,7 +714,7 @@ const DashboardPage2 = () => {
                         percentage={Math.round(
                           (dashboardStats?.summaryStats.avgWorkHours / 8) * 100
                         )}
-                        color="#3941e3"
+                        color="#28282B"
                       />
                     </div>
                   </div>
@@ -731,7 +731,7 @@ const DashboardPage2 = () => {
                           dashboardStats?.summaryStats.projectCompletionRate
                         }
                         size={150}
-                        color="#3941e3"
+                        color="#28282B"
                       />
                     </div>
                     <p className="text-center text-gray-600 mt-4">
@@ -852,7 +852,7 @@ const DashboardPage2 = () => {
                   <div className="space-y-4">
                     {dashboardStats?.roleDistribution.map((role, index) => {
                       const colors = [
-                        "#3941e3",
+                        "#28282B",
                         "#F59E0B",
                         "#10B981",
                         "#6366F1",
