@@ -2,7 +2,7 @@ export const production = false;
 export const development = true;
 export const staging = false;
 export const baseURL = production
-  ? "https://server.haquedigital.com/"
+  ? "https://8fp9fvw1-5001.inc1.devtunnels.ms/"
   : development
   ? "https://8fp9fvw1-5001.inc1.devtunnels.ms/"
   : staging

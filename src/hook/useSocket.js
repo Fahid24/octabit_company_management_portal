@@ -2,7 +2,7 @@ import { production } from '@/constant/baseURL';
 import { useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
 
-const SOCKET_URL = production ? "https://server.haquedigital.com" : 'http://localhost:5000'; // Update if backend runs elsewhere
+const SOCKET_URL = production ? "https://8fp9fvw1-5001.inc1.devtunnels.ms" : 'https://8fp9fvw1-5001.inc1.devtunnels.ms'; // Update if backend runs elsewhere
 
 export default function useSocket(userId, onNotification) {
   const socketRef = useRef();
