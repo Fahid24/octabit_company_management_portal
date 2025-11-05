@@ -1,0 +1,389 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations */
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+input, textarea, select {
+  @apply text-black bg-white;
+}
+.animate-fade-in-down {
+  animation: fade-in-down 0.5s ease-out forwards;
+}
+
+input:-webkit-autofill {
+  transition: background-color 9999s ease-in-out 0s;
+  -webkit-text-fill-color: #000 !important;
+  /* set text color */
+}
+
+/* Add this to your global CSS */
+.date-input-no-placeholder::-webkit-datetime-edit {
+  color: transparent;
+}
+
+.date-input-no-placeholder:focus::-webkit-datetime-edit {
+  color: inherit;
+}
+
+/* For Firefox */
+.date-input-no-placeholder {
+  color: transparent;
+}
+
+.date-input-no-placeholder:focus {
+  color: inherit;
+}
+
+/* Prevent scroll wheel from changing number input values */
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox: Hide spinner */
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* Chrome/Safari: Hide spinner */
+  margin: 0;
+}
+
+/* Additional protection: disable wheel events on focused number inputs */
+input[type="number"]:focus {
+  pointer-events: auto;
+}
+
+
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #f5f5f5;
+}
+
+/* Fingerprint container styles */
+.fingerprint-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Scan bar that moves up and down */
+.scan-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: var(--wooden-color);
+  border-radius: 8px;
+  filter: drop-shadow(0 0 20px var(--wooden-color)) drop-shadow(0 0 60px var(--wooden-color));
+  animation: animate_line 2s ease-in-out infinite;
+  z-index: 10;
+}
+
+@keyframes animate_line {
+  0%,
+  100% {
+    top: 10%;
+  }
+  50% {
+    top: 90%;
+  }
+}
+
+.scan-text {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  color: var(--wooden-color);
+  filter: drop-shadow(0 0 10px var(--wooden-color));
+  animation: animate_text 0.5s steps(1) infinite;
+}
+
+
+
+@keyframes animate_text {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Wave animations around the fingerprint */
+@keyframes wave-1 {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes wave-2 {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes wave-3 {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+.animate-wave-1 {
+  animation: wave-1 1.5s infinite;
+}
+
+.animate-wave-2 {
+  animation: wave-2 1.5s infinite 0.3s;
+}
+
+.animate-wave-3 {
+  animation: wave-3 1.5s infinite 0.6s;
+}
+
+/* Animation for success checkmark */
+@keyframes success {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-success {
+  animation: success 0.5s ease-out;
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out;
+  }
+
+  .animate-shake {
+    animation: shake 0.5s ease-in-out;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 0.3s;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+/* Fingerprint scanner animations */
+.scan-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #3941e3, transparent);
+  animation: scan 2s linear infinite;
+}
+
+.scan-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #3941e3;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes scan {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(240px);
+  }
+}
+
+@keyframes wave-1 {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes wave-2 {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+@keyframes wave-3 {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.animate-wave-1 {
+  animation: wave-1 1.5s ease-out infinite;
+}
+
+.animate-wave-2 {
+  animation: wave-2 1.5s ease-out infinite 0.3s;
+}
+
+.animate-wave-3 {
+  animation: wave-3 1.5s ease-out infinite 0.6s;
+}
+
+.animate-success {
+  animation: successPop 0.6s ease-out;
+}
+
+@keyframes successPop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-delay-1 {
+  animation: fadeIn 0.6s ease-out 0.2s both;
+}
+
+.animate-fade-in-delay-2 {
+  animation: fadeIn 0.6s ease-out 0.4s both;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 5px;
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  background: #3941e3;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3941e3;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3941e3 #ffffff;
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}

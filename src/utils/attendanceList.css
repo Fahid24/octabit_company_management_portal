@@ -1,0 +1,155 @@
+.attendance-table {
+  overflow-x: auto;
+  margin: 0;
+  padding: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.timesheet-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 0.5rem;
+}
+
+.timesheet-table th,
+.timesheet-table td {
+  padding: 12px 16px;
+  border: 1px solid #e5e7eb;
+  vertical-align: middle;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+.timesheet-table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  color: #4b5563;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  border-bottom-width: 2px;
+  border-bottom-color: #d1d5db;
+}
+
+.timesheet-table th:first-child {
+  border-top-left-radius: 0.5rem;
+}
+
+.timesheet-table th:last-child {
+  border-top-right-radius: 0.5rem;
+}
+
+.timesheet-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 0.5rem;
+}
+
+.timesheet-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 0.5rem;
+}
+
+.timesheet-table tbody tr:hover {
+  background-color: #f3f4f6;
+}
+
+.timesheet-table tr.leave-day {
+  background-color: #fff7ed;
+}
+
+.timesheet-table tr.leave-day:hover {
+  background-color: #ffedd5;
+}
+
+.timesheet-table tr.total-row {
+  background-color: #f1f5f9;
+  font-weight: 600;
+}
+
+/* Status indicators */
+.timesheet-table .status-indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.timesheet-table .status-present {
+  background-color: #10b981;
+}
+
+.timesheet-table .status-absent {
+  background-color: #ef4444;
+}
+
+.timesheet-table .status-leave {
+  background-color: #f59e0b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .timesheet-table {
+    font-size: 0.75rem;
+  }
+  
+  .timesheet-table th,
+  .timesheet-table td {
+    padding: 8px 10px;
+  }
+  
+  .timesheet-table th {
+    position: sticky;
+    top: 0;
+    background-color: #f9fafb;
+    z-index: 10;
+  }
+}
+
+/* Additional styling */
+.employee-photo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.timesheet-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Animation for hover effects */
+.timesheet-table tbody tr {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Progress bars */
+.progress-bar {
+  height: 8px;
+  border-radius: 4px;
+  background-color: #e5e7eb;
+  overflow: hidden;
+  margin: 4px 0;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease-in-out;
+}
+
+.progress-bar-fill-present {
+  background-color: #10b981;
+}
+
+.progress-bar-fill-leave {
+  background-color: #f59e0b;
+}
+
+.progress-bar-fill-absent {
+  background-color: #ef4444;
+}
