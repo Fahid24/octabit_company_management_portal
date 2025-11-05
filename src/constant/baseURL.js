@@ -4,7 +4,7 @@ export const staging = false;
 export const baseURL = production
   ? "https://server.haquedigital.com/"
   : development
-  ? "http://localhost:5001/"
+  ? "https://8fp9fvw1-5001.inc1.devtunnels.ms/"
   : staging
   ? "https://monkeyman-backend.vercel.app/"
   : "https://hpjql7hm-5000.usw3.devtunnels.ms/";
