@@ -55,7 +55,7 @@ const InstallPrompt = () => {
     setShowPrompt(false);
   };
 
-  if (!showPrompt && !deferredPrompt) return null;
+  if (!showPrompt) return null;
 
   return (
     <div
