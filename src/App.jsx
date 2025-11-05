@@ -11,7 +11,7 @@ function App() {
       <>
         <AppRouter />
         <ToastContainer position={POSITIONS.TOP_RIGHT} />
-        {/* <InstallPrompt /> */}
+        <InstallPrompt />
       </>
     </Provider>
   );

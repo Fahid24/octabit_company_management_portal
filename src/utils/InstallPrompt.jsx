@@ -16,10 +16,15 @@ const InstallPrompt = () => {
     const handler = (e) => {
       e.preventDefault();
       setDeferredPrompt(e);
-      setShowPrompt(false);
+      setShowPrompt(true); // Changed to true to show the prompt
     };
 
     window.addEventListener("beforeinstallprompt", handler);
+
+    // Check if already installed
+    if (window.matchMedia('(display-mode: standalone)').matches) {
+      setShowPrompt(false);
+    }
 
     return () => window.removeEventListener("beforeinstallprompt", handler);
   }, []);
@@ -35,11 +40,12 @@ const InstallPrompt = () => {
     if (deferredPrompt) {
       deferredPrompt.prompt();
       const { outcome } = await deferredPrompt.userChoice;
-      // if (outcome === "accepted") {
-      //   console.log("User accepted the install prompt");
-      // } else {
-      //   console.log("User dismissed the install prompt");
-      // }
+      console.log(`User response: ${outcome}`);
+      if (outcome === "accepted") {
+        console.log("User accepted the install prompt");
+      } else {
+        console.log("User dismissed the install prompt");
+      }
       setDeferredPrompt(null);
       setShowPrompt(false);
     }
@@ -49,7 +55,7 @@ const InstallPrompt = () => {
     setShowPrompt(false);
   };
 
-  if (!showPrompt) return null;
+  if (!showPrompt && !deferredPrompt) return null;
 
   return (
     <div
@@ -80,7 +86,7 @@ const InstallPrompt = () => {
       <button
         onClick={handleInstall}
         style={{
-          backgroundColor: "#3a41e2",
+          backgroundColor: "#000000",
           color: "#fff",
           border: "none",
           padding: "8px 16px",
