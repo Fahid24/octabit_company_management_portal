@@ -82,12 +82,14 @@ import UpdateClient from "@/pages/clientManagement/UpdateClient";
 import IncomeManagement from "@/pages/incomeManagement/IncomeManagement";
 import UpdateIncomeForm from "@/pages/incomeManagement/UpdateIncomeForm";
 import VendorManagementPage from "@/pages/vendor/VendorManagementPage";
+import TestDashboardPage from "@/pages/test/TestDashboardPage";
 
 const AppRouter = () => {
   const user = useSelector((state) => state.userSlice.user);
 
   const router = createBrowserRouter([
     { path: "/login", element: <LoginPage />, errorElement: <Error /> },
+    { path: "/test", element: <TestDashboardPage />, errorElement: <Error /> },
     // { path: "/register", element: <RegisterPage />, errorElement: <Error /> },
     {
       path: "/moral-survey-form",
